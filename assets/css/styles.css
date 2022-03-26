@@ -1,0 +1,449 @@
+:root {
+  --red: #e1203a;
+  --pink: #ff1c6e;
+  --green: #00ff06;
+  --blue: #62b4ff;
+}
+@font-face {
+  font-family: "Kusanagi";
+  src: url(../fonts/Kusanagi.otf);
+}
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url(../fonts/UbuntuMono-Regular.ttf);
+}
+body {
+  background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)),
+    url(../img/page-bg.svg) no-repeat;
+  background-size: cover;
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+/* ---------- SECTION HEADER ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 28px;
+}
+.logo-big {
+  width: 73px;
+  height: 70px;
+}
+nav:first-of-type {
+  background-image: url(../img/nav-frame-left.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+nav:last-of-type {
+  background-image: url(../img/nav-frame-right.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+nav {
+  display: flex;
+  align-items: center;
+
+  width: 752px;
+  height: 98.57px;
+}
+nav ul {
+  display: flex;
+  gap: 72px;
+
+  font-family: "Kusanagi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+nav:first-child ul {
+  margin-left: 117px;
+}
+nav:last-child ul {
+  margin-left: 290px;
+}
+nav a {
+  transition: all 0.5s;
+}
+nav a:hover {
+  color: var(--pink);
+}
+.spiner {
+  transition: all 0.5s;
+}
+.spiner:hover {
+  transform: rotate(1turn);
+}
+/* ---------- SECTION HERO ---------- */
+h1 {
+  font-family: "Kusanagi";
+  font-size: 87.2626px;
+  line-height: 92px;
+}
+
+h2 {
+  font-family: "Kusanagi";
+  font-size: 44.5164px;
+  line-height: 50px;
+
+  color: var(--pink);
+}
+
+h3 {
+  font-family: "Kusanagi";
+  font-size: 24px;
+  line-height: 27px;
+
+  color: #1ce4ff;
+}
+
+.section-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  padding: 45px 0 55px;
+
+  position: relative;
+}
+.section-hero-main {
+  margin-top: 135px;
+}
+.section-hero h2 {
+  margin: 17px 0 24px;
+}
+.hero-btn-frame {
+  display: flex;
+  gap: 32px;
+
+  margin-top: 58px;
+}
+.spiner {
+  margin-top: 87px;
+}
+.img-nft-character {
+  background: url(../img/nft-characters.png) right no-repeat;
+  background-size: contain;
+  margin-right: -120px;
+  width: 1099.79px;
+  height: 920.38px;
+}
+.red-blur:first-of-type {
+  position: absolute;
+  width: 858px;
+  height: 1086px;
+  right: -30%;
+  top: 44px;
+
+  background: rgba(255, 28, 110, 0.3);
+  filter: blur(361px);
+}
+.red-blur:last-of-type {
+  position: absolute;
+  width: 1303px;
+  height: 677px;
+  right: -30%;
+  bottom: 0;
+
+  background: rgba(255, 28, 110, 0.3);
+  filter: blur(361px);
+}
+/* ---------- SECTION NFT-COLLECTION ---------- */
+.section-nft-collection h2 {
+  font-size: 48px;
+  line-height: 50px;
+
+  text-align: center;
+}
+.section-nft-collection h2 span:first-child {
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 21px;
+}
+.nft-cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  margin-top: 72px;
+}
+.red {
+  color: var(--red);
+}
+.green {
+  color: var(--green);
+}
+.blue {
+  color: var(--blue);
+}
+.pink {
+  color: var(--pink);
+}
+.card {
+  display: flex;
+  gap: 20px;
+}
+.card-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  padding: 30px 0 0 33px;
+}
+.nft-cards img[alt^="NFT"] {
+  width: 263px;
+  height: 263px;
+}
+.card-info {
+  width: 551px;
+  height: 270px;
+  /* margin: 8px 12px 12px 9px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card:first-child .card-info {
+  background: url(../img/nft-card-frame-red.png);
+}
+.card:nth-child(2) .card-info {
+  background: url(../img/nft-card-frame-green.png);
+}
+.card:nth-child(3) .card-info {
+  background: url(../img/nft-card-frame-blue.png);
+}
+.card:nth-child(4) .card-info {
+  background: url(../img/nft-card-frame-pink.png);
+}
+.nft-cards article p {
+  padding: 33px 33px;
+}
+.nft-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+
+  font-family: "Kusanagi";
+  font-size: 24px;
+  line-height: 25px;
+}
+/* ---------- SECTION CREATOR ---------- */
+.section-creator {
+  margin: 128px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-creator h2,
+.section-roadmap h2,
+.section-faq h2,
+.section-contact h2 {
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 72px;
+  color: #fff;
+  text-align: center;
+}
+.creator-frame {
+  background: url(../img/creator-frame.png) center no-repeat;
+  width: 1114px;
+  height: 562px;
+  display: flex;
+}
+.creator-frame article {
+  display: flex;
+  justify-content: space-between;
+  gap: 42px;
+  align-items: flex-start;
+  margin: auto 30px;
+}
+.creator-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 603px;
+}
+.creator-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+img[alt~="rating"] {
+  margin: 18px 0 24px;
+}
+.h4-span {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 8px 0 24px;
+}
+.h4-span strong {
+  color: red;
+}
+/* ---------- SECTION ROADMAP ---------- */
+.section-roadmap,
+.section-contact {
+  margin: 128px 0;
+}
+
+.section-roadmap-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.roadmap-cards:first-of-type {
+  display: flex;
+  gap: 40px;
+}
+.roadmap-cards:last-of-type {
+  display: flex;
+  gap: 45px;
+}
+/* ---------- SECTION FAQ ---------- */
+.section-faq {
+  margin: 128px 0;
+}
+.section-faq-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.faq-card {
+  background: url(../img/faq-card.png) no-repeat;
+  width: 830px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-card-content {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 48px;
+}
+/* ---------- SECTION CONTACT---------- */
+
+.contact-frame {
+  background: url(../img/contact-frame.png) no-repeat;
+  width: 830px;
+  height: 584px;
+
+  margin: 0 auto;
+}
+.contact-main {
+  padding: 100px 40px 0;
+
+  display: grid;
+  grid-gap: 24px;
+  grid-template-areas:
+    "contact-email contact-location"
+    "input-name input-email"
+    "textarea textarea"
+    "btn-send btn-send"
+    "socials socials";
+}
+.contact-email {
+  grid-area: contact-email;
+  text-align: center;
+}
+.contact-location {
+  grid-area: contact-location;
+  text-align: center;
+}
+.input-name {
+  grid-area: input-name;
+}
+.input-email {
+  grid-area: input-email;
+}
+textarea {
+  grid-area: textarea;
+}
+.btn-send {
+  grid-area: btn-send;
+  justify-self: end;
+
+  font-family: "Kusanagi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 24px;
+}
+.socials {
+  grid-area: socials;
+  justify-self: center;
+}
+.socials ul {
+  display: flex;
+  gap: 22px;
+}
+input[name="email"],
+input[name="name"],
+textarea {
+  background-color: rgba(255, 28, 110, 0.2);
+  border: 4px solid #ff1c6e;
+  border-top: none;
+  border-bottom: none;
+  width: 100%;
+}
+input[name="email"],
+input[name="name"] {
+  height: 48px;
+}
+textarea {
+  padding-top: 15px;
+  height: 133px;
+}
+:-ms-input-placeholder {
+  color: #fff;
+}
+::-webkit-input-placeholder {
+  color: #fff;
+}
+.section-contact h3 {
+  font-size: 18px;
+  line-height: 19px;
+}
+.section-contact h4 {
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+
+  margin: 12px 0 32px;
+}
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0;
+}
