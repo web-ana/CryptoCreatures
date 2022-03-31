@@ -62,7 +62,7 @@ body {
 
   padding-top: 28px;
 }
-.logo-big {
+.logo {
   width: 73px;
   height: 70px;
 }
@@ -218,13 +218,13 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 21px;
+  text-align: center;
+
   margin-bottom: 72px;
   font-size: 48px;
   line-height: 50px;
 }
-.nft-collection-h2__item:first-of-type {
-  text-align: center;
-}
+
 .nft-collection-h2__item:last-of-type {
   color: rgba(255, 255, 255, 0.8);
   margin-right: 21px;
@@ -396,7 +396,15 @@ img[alt~='rating'] {
 .section-contact {
   margin: 128px 0;
 }
+.roadmap__h3,
+.roadmap__h3-tablet {
+  font-size: 48px;
+  line-height: 50px;
+  color: #ffffff;
 
+  margin-bottom: 8px;
+  margin-left: 28px;
+}
 .section-roadmap-main {
   display: flex;
   flex-wrap: wrap;
@@ -409,6 +417,12 @@ img[alt~='rating'] {
 .roadmap-cards:last-of-type {
   display: flex;
   gap: 45px;
+}
+.roadmap-card-tab,
+.roadmap-line-tablet,
+.roadmap__h3-tablet,
+.roadmap-line-mobile {
+  display: none;
 }
 /* ---------- SECTION FAQ ---------- */
 .section-faq {
