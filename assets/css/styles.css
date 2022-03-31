@@ -219,10 +219,10 @@ h3 {
   justify-content: center;
   gap: 21px;
   margin-bottom: 72px;
-}
-.nft-collection-h2__item:first-of-type {
   font-size: 48px;
   line-height: 50px;
+}
+.nft-collection-h2__item:first-of-type {
   text-align: center;
 }
 .nft-collection-h2__item:last-of-type {
@@ -326,6 +326,15 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
+.creator__h3 {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+
+  color: var(--red);
+}
 .section-creator h2,
 .section-roadmap h2,
 .section-faq h2,
@@ -342,7 +351,12 @@ h3 {
   height: 562px;
   display: flex;
 }
-.creator-frame article {
+.creator-img {
+  background: url(../img/creator-img.png);
+  width: 390px;
+  height: 456px;
+}
+.creator-frame__article {
   display: flex;
   justify-content: space-between;
   gap: 42px;
@@ -363,6 +377,11 @@ h3 {
 }
 img[alt~='rating'] {
   margin: 18px 0 24px;
+}
+.creator-info h4 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
 }
 .h4-span {
   font-size: 20px;
