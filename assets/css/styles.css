@@ -417,6 +417,7 @@ img[alt~='rating'] {
 .roadmap-cards:last-of-type {
   display: flex;
   gap: 45px;
+  justify-content: center;
 }
 .roadmap-card-tab,
 .roadmap-line-tablet,
@@ -428,10 +429,14 @@ img[alt~='rating'] {
 .section-faq {
   margin: 128px 0;
 }
-.section-faq-main {
+.section-faq__main {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(830px, 1fr));
+  justify-items: center;
+  gap: 20px; */
 }
 
 .faq-card {
@@ -443,7 +448,7 @@ img[alt~='rating'] {
   align-items: center;
   justify-content: space-between;
 }
-.faq-card-content {
+.faq-card__content {
   height: 100%;
   width: 100%;
   background: #ff1c6e33;
@@ -453,6 +458,11 @@ img[alt~='rating'] {
   justify-content: space-between;
 
   padding: 0 48px;
+}
+.faq-card__p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 21px;
 }
 /* ---------- SECTION CONTACT---------- */
 
