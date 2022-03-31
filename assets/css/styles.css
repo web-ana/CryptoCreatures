@@ -433,10 +433,6 @@ img[alt~='rating'] {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(830px, 1fr));
-  justify-items: center;
-  gap: 20px; */
 }
 
 .faq-card {
@@ -473,11 +469,13 @@ img[alt~='rating'] {
 
   margin: 0 auto;
 }
-.contact-main {
+.contact__main {
   padding: 100px 40px 0;
 
   display: grid;
-  grid-gap: 24px;
+  justify-content: center;
+  grid-row-gap: 24px;
+  grid-column-gap: 12px;
   grid-template-areas:
     'contact-email contact-location'
     'input-name input-email'
@@ -531,11 +529,12 @@ textarea {
   border: 4px solid #ff1c6e;
   border-top: none;
   border-bottom: none;
-  width: 100%;
+  /* width: 100%; */
 }
 input[name='email'],
 input[name='name'] {
   height: 48px;
+  width: 346px;
 }
 textarea {
   padding-top: 15px;

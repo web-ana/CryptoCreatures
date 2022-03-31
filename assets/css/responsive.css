@@ -250,6 +250,24 @@
     margin-left: 16px;
     margin-right: 16px;
   }
+  /* ---------- SECTION CONTACT start ---------- */
+  .contact-frame {
+    background: url(../img/contact-frame-tablet.png) no-repeat;
+    width: 736px;
+    height: 487px;
+  }
+  .contact__main {
+    padding-top: 48px;
+    grid-row-gap: 8px;
+    grid-column-gap: 8px;
+  }
+  input[alt='name'],
+  input[alt='mail'] {
+    width: 346px;
+  }
+  .btn-send {
+    margin-top: 8px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -325,6 +343,40 @@
   /* ---------- SECTION FAQ start ---------- */
   .faq-card__content {
     padding: 0 27px;
+    gap: 20px;
+  }
+  /* ---------- SECTION CONTACT start ---------- */
+  .contact-frame {
+    background: url(../img/contact-frame-mobile.png) no-repeat;
+    width: 343px;
+    height: 584px;
+  }
+  .contact__main {
+    padding-top: 32px;
+    grid-template-areas:
+      'contact-email contact-email'
+      'contact-location contact-location'
+      'input-name input-name'
+      'input-email input-email'
+      'textarea textarea'
+      'btn-send btn-send'
+      'socials socials';
+  }
+  .contact__main h4 {
+    margin-bottom: 24px;
+  }
+  textarea {
+    width: 311px;
+    height: 133px;
+  }
+  input[name='email'],
+  input[name='name'] {
+    width: 311px;
+    height: 48px;
+  }
+
+  footer {
+    display: none;
   }
 }
 
