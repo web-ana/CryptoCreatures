@@ -3,26 +3,51 @@
   --pink: #ff1c6e;
   --green: #00ff06;
   --blue: #62b4ff;
+
+  --nav-first-bg: url(../img/nav-frame-left.svg);
+  --nav-second-bg: url(../img/nav-frame-right.svg);
+  --red-blur-bg: url(../img/red-blur.png);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 @font-face {
-  font-family: "Kusanagi";
+  font-family: 'Kusanagi';
   src: url(../fonts/Kusanagi.otf);
 }
 @font-face {
-  font-family: "Ubuntu Mono";
+  font-family: 'Ubuntu Mono';
   src: url(../fonts/UbuntuMono-Regular.ttf);
 }
 body {
   background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)),
     url(../img/page-bg.svg) no-repeat;
   background-size: cover;
-  font-family: "Ubuntu Mono";
+
+  font-family: 'Ubuntu Mono';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
 
   color: #ffffff;
+  position: relative;
+
+  overflow-x: hidden;
 }
 .container {
   max-width: 1680px;
@@ -30,57 +55,67 @@ body {
 }
 
 /* ---------- SECTION HEADER ---------- */
-header {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 28px;
+  padding-top: 28px;
 }
 .logo-big {
   width: 73px;
   height: 70px;
 }
-nav:first-of-type {
-  background-image: url(../img/nav-frame-left.svg);
+.logo-caption {
+  display: none;
+  font-family: 'Ubuntu Mono';
+  font-size: 18px;
+  line-height: 24px;
+}
+.menu-btn-tablet {
+  display: none;
+  width: 18.75px;
+  height: 16.5px;
+}
+.nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-nav:last-of-type {
-  background-image: url(../img/nav-frame-right.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.nav-first {
+  background-image: var(--nav-first-bg);
 }
-nav {
+.nav-second {
+  background-image: var(--nav-second-bg);
+}
+.nav {
   display: flex;
   align-items: center;
 
   width: 752px;
   height: 98.57px;
 }
-nav ul {
+.menu {
   display: flex;
   gap: 72px;
 
-  font-family: "Kusanagi";
+  font-family: 'Kusanagi';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
 }
-nav:first-child ul {
+.menu-first {
   margin-left: 117px;
 }
-nav:last-child ul {
+.menu-second {
   margin-left: 290px;
 }
-nav a {
+.menu__link {
   transition: all 0.5s;
 }
-nav a:hover {
+.menu__link:hover {
   color: var(--pink);
 }
 .spiner {
@@ -89,33 +124,41 @@ nav a:hover {
 .spiner:hover {
   transform: rotate(1turn);
 }
+
 /* ---------- SECTION HERO ---------- */
+.section-hero {
+  margin-left: 120px;
+}
+
 h1 {
-  font-family: "Kusanagi";
+  font-family: 'Kusanagi';
   font-size: 87.2626px;
   line-height: 92px;
 }
 
 h2 {
-  font-family: "Kusanagi";
+  font-family: 'Kusanagi';
   font-size: 44.5164px;
   line-height: 50px;
-
   color: var(--pink);
 }
 
 h3 {
-  font-family: "Kusanagi";
+  font-family: 'Kusanagi';
   font-size: 24px;
   line-height: 27px;
-
   color: #1ce4ff;
 }
-
+.section-hero__h1 span,
+.section-hero__h2 span,
+.section-hero__h3 span {
+  display: block;
+}
 .section-hero {
-  display: flex;
-/*   flex-wrap: wrap; */
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  grid-template-rows: 1fr max-content max-content;
+  align-items: center;
 
   padding: 45px 0 55px;
 
@@ -128,58 +171,69 @@ h3 {
   margin: 17px 0 24px;
 }
 .hero-btn-frame {
+  grid-column: 1;
+  grid-row: 3;
   display: flex;
   gap: 32px;
 
   margin-top: 58px;
 }
 .spiner {
+  align-self: start;
   margin-top: 87px;
+  margin-left: 48px;
+  z-index: 1;
 }
-.img-nft-character {
-  background: url(../img/nft-characters.png) right no-repeat;
-  background-size: contain;
-  margin-right: -120px;
+.nft-characters {
+  background: url(../img/nft-characters.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 1099.79px;
   height: 920.38px;
-}
-.red-blur:first-of-type {
   position: absolute;
-  width: 858px;
-  height: 1086px;
-  right: -30%;
-  top: 44px;
-
-  background: rgba(255, 28, 110, 0.3);
-  filter: blur(361px);
+  right: 0;
+  top: 45px;
 }
-.red-blur:last-of-type {
+.nft-characters-tablet {
+  display: none;
+}
+
+.red-blur {
+  background: var(--red-blur-bg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 1281px;
+  height: 1755px;
   position: absolute;
-  width: 1303px;
-  height: 677px;
-  right: -30%;
-  bottom: 0;
-
-  background: rgba(255, 28, 110, 0.3);
-  filter: blur(361px);
+  top: 0;
+  right: 0;
 }
+
 /* ---------- SECTION NFT-COLLECTION ---------- */
-.section-nft-collection h2 {
+
+.nft-collection-h2 {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+  margin-bottom: 72px;
+}
+.nft-collection-h2__item:first-of-type {
   font-size: 48px;
   line-height: 50px;
-
   text-align: center;
 }
-.section-nft-collection h2 span:first-child {
+.nft-collection-h2__item:last-of-type {
   color: rgba(255, 255, 255, 0.8);
   margin-right: 21px;
 }
 .nft-cards {
-  display: flex;
-  flex-wrap: wrap;
-
-  align-items: center;
-  margin-top: 72px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.card__img {
+  width: 263px;
+  height: 263px;
 }
 .red {
   color: var(--red);
@@ -197,18 +251,14 @@ h3 {
   display: flex;
   gap: 20px;
 }
-.card-header {
+.card-info__header {
   display: flex;
   gap: 10px;
   align-items: center;
+  padding: 10px;
+}
 
-  padding: 30px 0 0 33px;
-}
-.nft-cards img[alt^="NFT"] {
-  width: 263px;
-  height: 263px;
-}
-.card-info {
+.card__frame {
   width: 551px;
   height: 270px;
   /* margin: 8px 12px 12px 9px; */
@@ -216,27 +266,43 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
 }
-.card:first-child .card-info {
-  background: url(../img/nft-card-frame-red.png);
+.card__frame.frame--red {
+  background: url(../img/nft-cardframe-red.png);
 }
-.card:nth-child(2) .card-info {
-  background: url(../img/nft-card-frame-green.png);
+.card__frame.frame--green {
+  background: url(../img/nft-cardframe-green.png);
 }
-.card:nth-child(3) .card-info {
-  background: url(../img/nft-card-frame-blue.png);
+.card__frame.frame--blue {
+  background: url(../img/nft-cardframe-blue.png);
 }
-.card:nth-child(4) .card-info {
-  background: url(../img/nft-card-frame-pink.png);
+.card__frame.frame--pink {
+  background: url(../img/nft-cardframe-pink.png);
 }
-.nft-cards article p {
-  padding: 33px 33px;
+.card-info__text {
+  padding: 30px 33px;
+}
+.card-info-content {
+  background: rgba(19, 1, 8, 0.5);
+  margin: 15px;
+}
+.frame--red .card-info__text {
+  background: rgba(225, 32, 58, 0.2);
+}
+.frame--green .card-info__text {
+  background: rgba(0, 255, 6, 0.2);
+}
+.frame--blue .card-info__text {
+  background: rgba(46, 152, 237, 0.2);
+}
+.frame--pink .card-info__text {
+  background: rgba(255, 28, 110, 0.2);
 }
 .nft-links {
   display: flex;
   justify-content: space-between;
   margin-top: 33px;
 
-  font-family: "Kusanagi";
+  font-family: 'Kusanagi';
   font-size: 24px;
   line-height: 25px;
 }
@@ -282,7 +348,7 @@ h3 {
   align-items: flex-start;
   gap: 24px;
 }
-img[alt~="rating"] {
+img[alt~='rating'] {
   margin: 18px 0 24px;
 }
 .h4-span {
@@ -334,6 +400,7 @@ img[alt~="rating"] {
 .faq-card-content {
   height: 100%;
   width: 100%;
+  background: #ff1c6e33;
 
   display: flex;
   align-items: center;
@@ -356,11 +423,11 @@ img[alt~="rating"] {
   display: grid;
   grid-gap: 24px;
   grid-template-areas:
-    "contact-email contact-location"
-    "input-name input-email"
-    "textarea textarea"
-    "btn-send btn-send"
-    "socials socials";
+    'contact-email contact-location'
+    'input-name input-email'
+    'textarea textarea'
+    'btn-send btn-send'
+    'socials socials';
 }
 .contact-email {
   grid-area: contact-email;
@@ -383,7 +450,7 @@ textarea {
   grid-area: btn-send;
   justify-self: end;
 
-  font-family: "Kusanagi";
+  font-family: 'Kusanagi';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -401,8 +468,8 @@ textarea {
   display: flex;
   gap: 22px;
 }
-input[name="email"],
-input[name="name"],
+input[name='email'],
+input[name='name'],
 textarea {
   background-color: rgba(255, 28, 110, 0.2);
   border: 4px solid #ff1c6e;
@@ -410,8 +477,8 @@ textarea {
   border-bottom: none;
   width: 100%;
 }
-input[name="email"],
-input[name="name"] {
+input[name='email'],
+input[name='name'] {
   height: 48px;
 }
 textarea {
@@ -429,7 +496,7 @@ textarea {
   line-height: 19px;
 }
 .section-contact h4 {
-  font-family: "Ubuntu Mono";
+  font-family: 'Ubuntu Mono';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
