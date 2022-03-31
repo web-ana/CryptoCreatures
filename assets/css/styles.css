@@ -57,7 +57,7 @@ body {
 /* ---------- SECTION HEADER ---------- */
 .header .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 
   padding-top: 28px;
@@ -210,6 +210,9 @@ h3 {
 }
 
 /* ---------- SECTION NFT-COLLECTION ---------- */
+.nft-collection {
+  margin-top: 300px;
+}
 
 .nft-collection-h2 {
   display: flex;
@@ -229,6 +232,7 @@ h3 {
 .nft-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
   grid-gap: 10px;
 }
 .card__img {
@@ -296,6 +300,15 @@ h3 {
 }
 .frame--pink .card-info__text {
   background: rgba(255, 28, 110, 0.2);
+}
+.nft-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+
+  margin: 28px 0;
+  display: none;
 }
 .nft-links {
   display: flex;
