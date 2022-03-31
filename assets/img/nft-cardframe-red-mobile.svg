@@ -1,0 +1,16 @@
+<svg width="343" height="458" viewBox="0 0 343 458" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="12" y="19" width="319" height="418" fill="#E1203A" fill-opacity="0.2"/>
+<path d="M319 0H343V11H213V7L228 0H301V3H319V0Z" fill="#E1203A"/>
+<line x1="341" y1="447" x2="341" y2="52" stroke="#E1203A" stroke-opacity="0.5" stroke-width="4"/>
+<line x1="341" y1="40" x2="341" y2="11" stroke="#E1203A" stroke-width="4"/>
+<line x1="231" y1="449" x2="343" y2="449" stroke="#E1203A" stroke-opacity="0.5" stroke-width="4"/>
+<line x1="130" y1="449" x2="223" y2="449" stroke="#E1203A" stroke-width="4"/>
+<line x1="2" y1="447" x2="2.00002" y2="106" stroke="#E1203A" stroke-width="4"/>
+<line x1="2" y1="96" x2="2" y2="31" stroke="#E1203A" stroke-width="4"/>
+<line x1="32" y1="9" x2="152" y2="9.00001" stroke="#E1203A" stroke-opacity="0.5" stroke-width="4"/>
+<line x1="180" y1="9" x2="213" y2="9" stroke="#E1203A" stroke-width="4"/>
+<line x1="2" y1="21" x2="2" y2="11" stroke="#E1203A" stroke-width="4"/>
+<line y1="9" x2="12" y2="9" stroke="#E1203A" stroke-width="4"/>
+<rect width="319" height="56" transform="translate(12 19)" fill="#130108" fill-opacity="0.5"/>
+<path d="M24 458H0V447H130V451L115 458H80V450H76V458H72V450H68V458H64V450H59.926V458H42V455H24V458Z" fill="#E1203A"/>
+</svg>
