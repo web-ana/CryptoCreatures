@@ -1,0 +1,14 @@
+<svg width="736" height="278" viewBox="0 0 736 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M712 0H736V11H606V7L621 0H694V3H712V0Z" fill="#00FF06"/>
+<line x1="734" y1="267" x2="734" y2="52" stroke="#00FF06" stroke-opacity="0.5" stroke-width="4"/>
+<line x1="734" y1="40" x2="734" y2="11" stroke="#00FF06" stroke-width="4"/>
+<line x1="236" y1="269" x2="736" y2="269" stroke="#00FF06" stroke-opacity="0.5" stroke-width="4"/>
+<line x1="130" y1="269" x2="223" y2="269" stroke="#00FF06" stroke-width="4"/>
+<line x1="2" y1="267" x2="2.00001" y2="106" stroke="#00FF06" stroke-width="4"/>
+<line x1="2" y1="96" x2="2" y2="31" stroke="#00FF06" stroke-width="4"/>
+<line x1="32" y1="9" x2="556" y2="9.00005" stroke="#00FF06" stroke-opacity="0.5" stroke-width="4"/>
+<line x1="573" y1="9" x2="606" y2="9" stroke="#00FF06" stroke-width="4"/>
+<line x1="2" y1="21" x2="2" y2="11" stroke="#00FF06" stroke-width="4"/>
+<line y1="9" x2="12" y2="9" stroke="#00FF06" stroke-width="4"/>
+<path d="M24 278H0V267H130V271L115 278H80V270H76V278H72V270H68V278H64V270H59.926V278H42V275H24V278Z" fill="#00FF06"/>
+</svg>

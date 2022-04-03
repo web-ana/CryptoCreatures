@@ -1,571 +1,753 @@
 :root {
-  --red: #e1203a;
-  --pink: #ff1c6e;
-  --green: #00ff06;
-  --blue: #62b4ff;
-
-  --nav-first-bg: url(../img/nav-frame-left.svg);
-  --nav-second-bg: url(../img/nav-frame-right.svg);
-  --red-blur-bg: url(../img/red-blur.png);
+    --red: #e1203a;
+    --pink: #ff1c6e;
+    --green: #00ff06;
+    --blue: #62b4ff;
+    --nav-first-bg: url(../img/nav-frame-left.svg);
+    --nav-second-bg: url(../img/nav-frame-right.svg);
+    --red-blur-bg: url(../img/red-blur.png);
 }
+
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: inherit;
-}
-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-@font-face {
-  font-family: 'Kusanagi';
-  src: url(../fonts/Kusanagi.otf);
-}
-@font-face {
-  font-family: 'Ubuntu Mono';
-  src: url(../fonts/UbuntuMono-Regular.ttf);
-}
+
+html,
 body {
-  background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)),
-    url(../img/page-bg.svg) no-repeat;
-  background-size: cover;
-
-  font-family: 'Ubuntu Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
-
-  color: #ffffff;
-  position: relative;
-
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Kusanagi';
+    src: url(../fonts/Kusanagi.otf);
+}
+
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: url(../fonts/UbuntuMono-Regular.ttf);
+}
+
+body {
+    background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)), url(../img/page-bg.svg) no-repeat;
+    background-size: cover;
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #ffffff;
+    position: relative;
+    overflow-x: hidden;
+}
+
 .container {
-  max-width: 1680px;
-  margin: 0 auto;
+    max-width: 1680px;
+    margin: 0 auto;
 }
+
 
 /* ---------- SECTION HEADER ---------- */
+
 .header .container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  padding-top: 28px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 28px;
 }
+
 .logo {
-  width: 73px;
-  height: 70px;
+    width: 73px;
+    height: 70px;
 }
+
 .logo-caption {
-  display: none;
-  font-family: 'Ubuntu Mono';
-  font-size: 18px;
-  line-height: 24px;
+    display: none;
+    font-family: 'Ubuntu Mono';
+    font-size: 18px;
+    line-height: 24px;
 }
+
 .menu-btn-tablet {
-  display: none;
-  width: 18.75px;
-  height: 16.5px;
+    display: none;
+    width: 18.75px;
+    height: 16.5px;
 }
+
 .nav {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 .nav-first {
-  background-image: var(--nav-first-bg);
+    background-image: var(--nav-first-bg);
 }
+
 .nav-second {
-  background-image: var(--nav-second-bg);
+    background-image: var(--nav-second-bg);
 }
+
 .nav {
-  display: flex;
-  align-items: center;
-
-  width: 752px;
-  height: 98.57px;
+    display: flex;
+    align-items: center;
+    width: 752px;
+    height: 98.57px;
 }
+
 .menu {
-  display: flex;
-  gap: 72px;
+    display: flex;
+    gap: 72px;
+    font-family: 'Kusanagi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
 
-  font-family: 'Kusanagi';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
 .menu-first {
-  margin-left: 117px;
+    margin-left: 117px;
 }
+
 .menu-second {
-  margin-left: 290px;
+    margin-left: 290px;
 }
+
 .menu__link {
-  transition: all 0.5s;
+    transition: all 0.5s;
 }
+
 .menu__link:hover {
-  color: var(--pink);
+    color: var(--pink);
 }
+
 .spiner {
-  transition: all 0.5s;
+    transition: all 0.5s;
 }
+
 .spiner:hover {
-  transform: rotate(1turn);
+    transform: rotate(1turn);
 }
+
 
 /* ---------- SECTION HERO ---------- */
+
 .section-hero {
-  margin-left: 120px;
+    margin-left: 120px;
 }
 
 h1 {
-  font-family: 'Kusanagi';
-  font-size: 87.2626px;
-  line-height: 92px;
+    font-family: 'Kusanagi';
+    font-size: 87.2626px;
+    line-height: 92px;
 }
 
 h2 {
-  font-family: 'Kusanagi';
-  font-size: 44.5164px;
-  line-height: 50px;
-  color: var(--pink);
+    font-family: 'Kusanagi';
+    font-size: 44.5164px;
+    line-height: 50px;
+    color: var(--pink);
 }
 
 h3 {
-  font-family: 'Kusanagi';
-  font-size: 24px;
-  line-height: 27px;
-  color: #1ce4ff;
+    font-family: 'Kusanagi';
+    font-size: 24px;
+    line-height: 27px;
+    color: #1ce4ff;
 }
+
 .section-hero__h1 span,
 .section-hero__h2 span,
 .section-hero__h3 span {
-  display: block;
+    display: block;
 }
+
 .section-hero {
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  grid-template-rows: 1fr max-content max-content;
-  align-items: center;
-
-  padding: 45px 0 55px;
-
-  position: relative;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-rows: 1fr max-content max-content;
+    align-items: center;
+    padding: 45px 0 55px;
+    position: relative;
 }
+
 .section-hero-main {
-  margin-top: 135px;
+    margin-top: 135px;
 }
-.section-hero h2 {
-  margin: 17px 0 24px;
-}
-.hero-btn-frame {
-  grid-column: 1;
-  grid-row: 3;
-  display: flex;
-  gap: 32px;
 
-  margin-top: 58px;
+.section-hero h2 {
+    margin: 17px 0 24px;
 }
+
+.hero-btn-frame {
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    gap: 32px;
+    margin-top: 58px;
+}
+
 .spiner {
-  align-self: start;
-  margin-top: 87px;
-  margin-left: 48px;
-  z-index: 1;
+    align-self: start;
+    margin-top: 87px;
+    margin-left: 48px;
+    z-index: 1;
 }
+
 .nft-characters {
-  background: url(../img/nft-characters.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 1099.79px;
-  height: 920.38px;
-  position: absolute;
-  right: 0;
-  top: 45px;
+    background: url(../img/nft-characters.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1099.79px;
+    height: 971px;
+    position: absolute;
+    right: 0;
+    top: 45px;
 }
+
 .nft-characters-tablet {
-  display: none;
+    display: none;
 }
 
 .red-blur {
-  background: var(--red-blur-bg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 1281px;
-  height: 1755px;
-  position: absolute;
-  top: 0;
-  right: 0;
+    background: var(--red-blur-bg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1281px;
+    height: 1755px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
+
 /* ---------- SECTION NFT-COLLECTION ---------- */
+
 .nft-collection {
-  margin-top: 300px;
+    margin-top: 300px;
 }
 
 .nft-collection-h2 {
-  display: flex;
-  justify-content: center;
-  gap: 21px;
-  text-align: center;
-
-  margin-bottom: 72px;
-  font-size: 48px;
-  line-height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 21px;
+    text-align: center;
+    margin-bottom: 72px;
+    font-size: 48px;
+    line-height: 50px;
 }
 
 .nft-collection-h2__item:last-of-type {
-  color: rgba(255, 255, 255, 0.8);
-  margin-right: 21px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 21px;
 }
+
 .nft-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 10px;
 }
+
+.nft-cards-new {
+    justify-items: center;
+}
+
 .card__img {
-  width: 263px;
-  height: 263px;
+    width: 263px;
+    height: 263px;
 }
+
 .red {
-  color: var(--red);
+    color: var(--red);
 }
+
 .green {
-  color: var(--green);
+    color: var(--green);
 }
+
 .blue {
-  color: var(--blue);
+    color: var(--blue);
 }
+
 .pink {
-  color: var(--pink);
+    color: var(--pink);
 }
+
 .card {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
+
 .card-info__header {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
 }
 
 .card__frame {
-  width: 551px;
-  height: 270px;
-  /* margin: 8px 12px 12px 9px; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    width: 551px;
+    height: 270px;
+    /* margin: 8px 12px 12px 9px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 .card__frame.frame--red {
-  background: url(../img/nft-cardframe-red.png);
+    background: url(../img/nft-cardframe-red.png);
 }
+
 .card__frame.frame--green {
-  background: url(../img/nft-cardframe-green.png);
+    background: url(../img/nft-cardframe-green.png);
 }
+
 .card__frame.frame--blue {
-  background: url(../img/nft-cardframe-blue.png);
+    background: url(../img/nft-cardframe-blue.png);
 }
+
 .card__frame.frame--pink {
-  background: url(../img/nft-cardframe-pink.png);
+    background: url(../img/nft-cardframe-pink.png);
 }
+
 .card-info__text {
-  padding: 30px 33px;
+    padding: 30px 33px;
 }
+
 .card-info-content {
-  background: rgba(19, 1, 8, 0.5);
-  margin: 15px;
+    background: rgba(19, 1, 8, 0.5);
+    margin: 15px;
 }
+
 .frame--red .card-info__text {
-  background: rgba(225, 32, 58, 0.2);
+    background: rgba(225, 32, 58, 0.2);
 }
+
 .frame--green .card-info__text {
-  background: rgba(0, 255, 6, 0.2);
+    background: rgba(0, 255, 6, 0.2);
 }
+
 .frame--blue .card-info__text {
-  background: rgba(46, 152, 237, 0.2);
+    background: rgba(46, 152, 237, 0.2);
 }
+
 .frame--pink .card-info__text {
-  background: rgba(255, 28, 110, 0.2);
+    background: rgba(255, 28, 110, 0.2);
 }
+
 .nft-slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 33px;
-
-  margin: 28px 0;
-  display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    margin: 28px 0;
+    display: none;
 }
+
 .nft-links {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 33px;
-
-  font-family: 'Kusanagi';
-  font-size: 24px;
-  line-height: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+    font-family: 'Kusanagi';
+    font-size: 24px;
+    line-height: 25px;
 }
+
+
 /* ---------- SECTION CREATOR ---------- */
-.section-creator {
-  margin: 128px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.creator__h3 {
-  font-family: 'Ubuntu Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 24px;
 
-  color: var(--red);
+.section-creator {
+    margin: 128px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.creator__h3 {
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--red);
+}
+
 .section-creator h2,
 .section-roadmap h2,
 .section-faq h2,
 .section-contact h2 {
-  font-size: 48px;
-  line-height: 50px;
-  margin-bottom: 72px;
-  color: #fff;
-  text-align: center;
+    font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 72px;
+    color: #fff;
+    text-align: center;
 }
+
 .creator-frame {
-  background: url(../img/creator-frame.png) center no-repeat;
-  width: 1114px;
-  height: 562px;
-  display: flex;
+    background: url(../img/creator-frame.png) center no-repeat;
+    width: 1114px;
+    height: 562px;
+    display: flex;
 }
+
 .creator-img {
-  background: url(../img/creator-img.png);
-  width: 390px;
-  height: 456px;
+    background: url(../img/creator-img.png);
+    width: 390px;
+    height: 456px;
 }
+
 .creator-frame__article {
-  display: flex;
-  justify-content: space-between;
-  gap: 42px;
-  align-items: flex-start;
-  margin: auto 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+    align-items: flex-start;
+    margin: auto 30px;
 }
+
 .creator-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 603px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 603px;
 }
-.creator-info > div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
+
+.creator-info>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
 }
+
 img[alt~='rating'] {
-  margin: 18px 0 24px;
+    margin: 18px 0 24px;
 }
+
 .creator-info h4 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
 }
+
 .h4-span {
-  font-size: 20px;
-  line-height: 24px;
-  margin: 8px 0 24px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 8px 0 24px;
 }
+
 .h4-span strong {
-  color: red;
+    color: red;
 }
+
+
 /* ---------- SECTION ROADMAP ---------- */
+
 .section-roadmap,
 .section-contact {
-  margin: 128px 0;
+    margin: 128px 0;
 }
+
 .roadmap__h3,
 .roadmap__h3-tablet {
-  font-size: 48px;
-  line-height: 50px;
-  color: #ffffff;
+    font-size: 48px;
+    line-height: 50px;
+    color: #ffffff;
+    margin-bottom: 8px;
+    margin-left: 28px;
+}
 
-  margin-bottom: 8px;
-  margin-left: 28px;
-}
 .section-roadmap-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .roadmap-cards:first-of-type {
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 40px;
 }
+
 .roadmap-cards:last-of-type {
-  display: flex;
-  gap: 45px;
-  justify-content: center;
+    display: flex;
+    gap: 45px;
+    justify-content: center;
 }
+
 .roadmap-card-tab,
 .roadmap-line-tablet,
 .roadmap__h3-tablet,
 .roadmap-line-mobile {
-  display: none;
+    display: none;
 }
+
+
 /* ---------- SECTION FAQ ---------- */
+
 .section-faq {
-  margin: 128px 0;
+    margin: 128px 0;
 }
+
 .section-faq__main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .faq-card {
-  background: url(../img/faq-card.png) no-repeat;
-  width: 830px;
-  height: 100px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    background: url(../img/faq-card.png) no-repeat;
+    width: 830px;
+    height: 100px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
 }
+
 .faq-card__content {
-  height: 100%;
-  width: 100%;
-  background: #ff1c6e33;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0 48px;
+    height: 100%;
+    width: 100%;
+    background: #ff1c6e33;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
 }
+
 .faq-card__p {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 21px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21px;
 }
+
+
 /* ---------- SECTION CONTACT---------- */
 
 .contact-frame {
-  background: url(../img/contact-frame.png) no-repeat;
-  width: 830px;
-  height: 584px;
-
-  margin: 0 auto;
+    background: url(../img/contact-frame.png) no-repeat;
+    width: 830px;
+    height: 584px;
+    margin: 0 auto;
 }
+
 .contact__main {
-  padding: 100px 40px 0;
-
-  display: grid;
-  justify-content: center;
-  grid-row-gap: 24px;
-  grid-column-gap: 12px;
-  grid-template-areas:
-    'contact-email contact-location'
-    'input-name input-email'
-    'textarea textarea'
-    'btn-send btn-send'
-    'socials socials';
+    padding: 100px 40px 0;
+    display: grid;
+    justify-content: center;
+    grid-row-gap: 24px;
+    grid-column-gap: 12px;
+    grid-template-areas: 'contact-email contact-location' 'input-name input-email' 'textarea textarea' 'btn-send btn-send' 'socials socials';
 }
+
 .contact-email {
-  grid-area: contact-email;
-  text-align: center;
+    grid-area: contact-email;
+    text-align: center;
 }
+
 .contact-location {
-  grid-area: contact-location;
-  text-align: center;
+    grid-area: contact-location;
+    text-align: center;
 }
+
 .input-name {
-  grid-area: input-name;
+    grid-area: input-name;
 }
+
 .input-email {
-  grid-area: input-email;
+    grid-area: input-email;
 }
+
 textarea {
-  grid-area: textarea;
+    grid-area: textarea;
 }
+
 .btn-send {
-  grid-area: btn-send;
-  justify-self: end;
-
-  font-family: 'Kusanagi';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  margin-bottom: 24px;
+    grid-area: btn-send;
+    justify-self: end;
+    font-family: 'Kusanagi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 24px;
 }
+
 .socials {
-  grid-area: socials;
-  justify-self: center;
+    grid-area: socials;
+    justify-self: center;
 }
+
 .socials ul {
-  display: flex;
-  gap: 22px;
+    display: flex;
+    gap: 22px;
 }
+
 input[name='email'],
 input[name='name'],
 textarea {
-  background-color: rgba(255, 28, 110, 0.2);
-  border: 4px solid #ff1c6e;
-  border-top: none;
-  border-bottom: none;
-  /* width: 100%; */
+    background-color: rgba(255, 28, 110, 0.2);
+    border: 4px solid #ff1c6e;
+    border-top: none;
+    border-bottom: none;
+    /* width: 100%; */
 }
+
 input[name='email'],
 input[name='name'] {
-  height: 48px;
-  width: 346px;
+    height: 48px;
+    width: 346px;
 }
+
 textarea {
-  padding-top: 15px;
-  height: 133px;
+    padding-top: 15px;
+    height: 133px;
 }
+
 :-ms-input-placeholder {
-  color: #fff;
+    color: #fff;
 }
+
 ::-webkit-input-placeholder {
-  color: #fff;
+    color: #fff;
 }
+
 .section-contact h3 {
-  font-size: 18px;
-  line-height: 19px;
+    font-size: 18px;
+    line-height: 19px;
 }
+
 .section-contact h4 {
-  font-family: 'Ubuntu Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 19px;
-
-  margin: 12px 0 32px;
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    margin: 12px 0 32px;
 }
-/* ---------- FOOTER ---------- */
-footer {
-  background-color: #1a1a1a;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  padding: 20px 0;
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+/* NFT SLIDER NEW */
+
+.nft-slider-new {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.navigator-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    height: 70px;
+    position: relative;
+    /* background-color: #000; */
+}
+
+.slider_button_next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider_button_prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-pagination-bullet {
+    background: rgba(255, 28, 110, 1) !important;
+    border-radius: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(255, 28, 110, 1);
+}
+
+.swiper-pagination {
+    z-index: 1;
+}
+
+.slider_button_prev,
+.slider_button_next {
+    z-index: 2;
+}
+
+.swiper-slide {
+    background: none;
+    font-size: 17px;
+    text-align: start;
+}
+
+
+/* FAQ */
+
+.faq-card-text {
+    background-color: #ff1c6e;
 }
