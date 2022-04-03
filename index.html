@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/mobile-menu.css">
     <title>Crypto Creatures</title>
 </head>
 
@@ -16,9 +17,9 @@
         <div class="container">
             <nav class="nav nav-first">
                 <ul class="menu menu-first">
-                    <li class="menu__item"><a class="menu__link" href="">HOME</a></li>
-                    <li class="menu__item"><a class="menu__link" href="">NFT CoLLection</a></li>
-                    <li class="menu__item"><a class="menu__link" href="">CREATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html">HOME</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#nft-collections">NFT CoLLection</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#creator">CREATOR</a></li>
                 </ul>
             </nav>
             <a class="logo-tablet" href="#"><img class="logo" src="./assets/img/logo-png.png" alt="Crypto Creatures">
@@ -26,12 +27,40 @@
             </a>
             <nav class="nav nav-second">
                 <ul class="menu menu-second">
-                    <li class="menu__item"><a class="menu__link" href="">ROADMAP</a></li>
-                    <li class="menu__item"><a class="menu__link" href="">FAQ</a></li>
-                    <li class="menu__item"><a class="menu__link" href="">CONTACT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#roadmap">ROADMAP</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#faq">FAQ</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-            <a href=""><img class="menu-btn-tablet" src="./assets/img/menu-btn-tablet.png" alt=""></a>
+            <a onclick="openMenu()"><img class="menu-btn-tablet" src="./assets/img/menu-btn-tablet.png" alt=""></a>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <a class="logo-tablet" href="#"><img class="logo" src="./assets/img/logo-png.png" alt="Crypto Creatures"></a>
+                <img src="./assets/img/close.svg" alt="Close Menu" onclick="closeMenu()">
+            </div>
+
+            <nav class="mobile-nav">
+                <li>
+                    <a href="#" onclick="closeMenu()">HOME</a>
+                </li>
+                <li>
+                    <a href="#nft-collections" onclick="closeMenu()">NFT CoLLection</a>
+                </li>
+                <li>
+                    <a href="#creator" onclick="closeMenu()">CREATOR</a>
+                </li>
+                <li>
+                    <a href="#roadmap" onclick="closeMenu()">ROADMAP</a>
+                </li>
+                <li>
+                    <a href="#faq" onclick="closeMenu()">FAQ</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick="closeMenu()">CONTACT</a>
+                </li>
+            </nav>
         </div>
     </header>
     <main>
@@ -55,7 +84,7 @@
         <section class="nft-collection">
 
             <div class="container">
-                <h2 class="nft-collection-h2"><span class="nft-collection-h2__item">NFT COLLECTION</span><span class="nft-collection-h2__item">CRYPTO
+                <h2 id="nft-collections" class="nft-collection-h2"><span class="nft-collection-h2__item">NFT COLLECTION</span><span class="nft-collection-h2__item">CRYPTO
                         CREATURES</span></h2>
                 <div class="nft-cards">
                     <article class="card">
@@ -196,7 +225,7 @@
 
         </section>
         <section class="section-creator">
-            <h2>CREATOR</h2>
+            <h2 id="creator">CREATOR</h2>
             <div class="creator-frame">
                 <article class="creator-frame__article">
                     <div class="creator-img"></div>
@@ -217,7 +246,7 @@
         </section>
         <section class="section-roadmap">
             <div class="container">
-                <h2>ROADMAP</h2>
+                <h2 id="roadmap">ROADMAP</h2>
                 <div class="section-roadmap-main">
                     <h3 class="roadmap__h3-tablet">2021</h3>
                     <div class="roadmap-2021">
@@ -261,7 +290,7 @@
         </section>
         <section class="section-faq">
             <div class="container faq-container">
-                <h2>FAQ</h2>
+                <h2 id="faq">FAQ</h2>
                 <div class="section-faq__main">
                     <div class="faq-card">
                         <div class="faq-card__content">
@@ -315,7 +344,7 @@
             </div>
         </section>
         <section class="section-contact">
-            <h2>CONTACT</h2>
+            <h2 id="contact">CONTACT</h2>
             <div class="contact-frame">
                 <form class="contact__main" method="POST">
                     <div class="contact-email">
@@ -369,6 +398,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/nft-scroll.js"></script>
     <script src="./assets/js/faq.js"></script>
+    <script src="./assets/js/mobile-menu.js"></script>
 </body>
 
 </html>

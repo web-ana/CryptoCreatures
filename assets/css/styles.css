@@ -8,10 +8,17 @@
     --red-blur-bg: url(../img/red-blur.png);
 }
 
+html {
+    scroll-behavior: smooth;
+    /* overflow: hidden; */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 html,

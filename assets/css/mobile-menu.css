@@ -1,0 +1,61 @@
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2E1229;
+    z-index: 1000000;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.mobile-menu-header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 52px;
+}
+
+.openupmenu {
+    animation-name: Menupopup;
+    animation-duration: 0.5s;
+}
+
+.closemenu {
+    animation-name: Menuclose;
+    animation-duration: 0.5s;
+}
+
+@keyframes Menupopup {
+    0% {
+        bottom: 90%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes Menuclose {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+.mobile-nav {
+    font-family: 'Kusanagi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-gap: 40px;
+}
