@@ -382,10 +382,6 @@
         flex-direction: column;
     }
     /* ---------- SECTION FAQ start ---------- */
-    .faq-card__content {
-        padding: 0 27px;
-        gap: 20px;
-    }
     /* ---------- SECTION CONTACT start ---------- */
     .contact-frame {
         background: url(../img/contact-frame-mobile.png) no-repeat;

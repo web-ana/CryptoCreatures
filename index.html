@@ -260,45 +260,56 @@
             </div>
         </section>
         <section class="section-faq">
-            <div class="container">
+            <div class="container faq-container">
                 <h2>FAQ</h2>
                 <div class="section-faq__main">
                     <div class="faq-card">
                         <div class="faq-card__content">
                             <p class="faq-card__p">What are CryptoCreatures?</p>
-                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33">
+                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33" onclick="openfaq('#faqcard1', '#faqarrow1')" id="faqarrow1">
                         </div>
-                        <p class="faq-card-text">dhawiudwahiud</p>
+                        <p class="faq-card-text" id="faqcard1">Phillip believes trustless technological solutions will bring people together. The paradigm shift from centralized control to decentralized and democratized power is inevitable. He continues to promote technologies that provide
+                            users sovereignty over their data. The next frontier is a peer-to-peer economy in which technology respects privacy.</p>
                     </div>
                     <div class="faq-card">
                         <div class="faq-card__content">
                             <p class="faq-card__p">Who are the people behind this company?</p>
-                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33">
+                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33" onclick="openfaq('#faqcard2', '#faqarrow2')" id="faqarrow2">
                         </div>
+                        <p class="faq-card-text" id="faqcard2">Phillip believes trustless technological solutions will bring people together. The paradigm shift from centralized control to decentralized and democratized power is inevitable. He continues to promote technologies that provide
+                            users sovereignty over their data. The next frontier is a peer-to-peer economy in which technology respects privacy.</p>
                     </div>
                     <div class="faq-card">
                         <div class="faq-card__content">
                             <p class="faq-card__p">Where can I buy CryptoCreatures NFTs?</p>
-                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33">
+                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33" onclick="openfaq('#faqcard3', '#faqarrow3')" id="faqarrow3">
                         </div>
+                        <p class="faq-card-text" id="faqcard3">Phillip believes trustless technological solutions will bring people together. The paradigm shift from centralized control to decentralized and democratized power is inevitable. He continues to promote technologies that provide
+                            users sovereignty over their data. The next frontier is a peer-to-peer economy in which technology respects privacy.</p>
                     </div>
                     <div class="faq-card">
                         <div class="faq-card__content">
                             <p class="faq-card__p">Are you hiring?</p>
-                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33">
+                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33" onclick="openfaq('#faqcard4', '#faqarrow4')" id="faqarrow4">
                         </div>
+                        <p class="faq-card-text" id="faqcard4">Phillip believes trustless technological solutions will bring people together. The paradigm shift from centralized control to decentralized and democratized power is inevitable. He continues to promote technologies that provide
+                            users sovereignty over their data. The next frontier is a peer-to-peer economy in which technology respects privacy.</p>
                     </div>
                     <div class="faq-card">
                         <div class="faq-card__content">
                             <p class="faq-card__p">Where is the best place to follow you?</p>
-                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33">
+                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33" onclick="openfaq('#faqcard5', '#faqarrow5')" id="faqarrow5">
                         </div>
+                        <p class="faq-card-text" id="faqcard5">Phillip believes trustless technological solutions will bring people together. The paradigm shift from centralized control to decentralized and democratized power is inevitable. He continues to promote technologies that provide
+                            users sovereignty over their data. The next frontier is a peer-to-peer economy in which technology respects privacy.</p>
                     </div>
                     <div class="faq-card">
                         <div class="faq-card__content">
                             <p class="faq-card__p">What are CryptoCreatures?</p>
-                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33">
+                            <img src="./assets/img/faq-arrow.png" alt="" height="25" width="33" onclick="openfaq('#faqcard6', '#faqarrow6')" id="faqarrow6">
                         </div>
+                        <p class="faq-card-text" id="faqcard6">Phillip believes trustless technological solutions will bring people together. The paradigm shift from centralized control to decentralized and democratized power is inevitable. He continues to promote technologies that provide
+                            users sovereignty over their data. The next frontier is a peer-to-peer economy in which technology respects privacy.</p>
                     </div>
                 </div>
             </div>
@@ -306,7 +317,7 @@
         <section class="section-contact">
             <h2>CONTACT</h2>
             <div class="contact-frame">
-                <div class="contact__main">
+                <form class="contact__main" method="POST">
                     <div class="contact-email">
                         <h3>Email</h3>
                         <h4>Cryptocreatures13@gmail.com</h4>
@@ -321,8 +332,7 @@
                     <label class="input-email" for="email">
                         <input id="email" type="email" name="email" placeholder="Email Address">
                     </label>
-                    <textarea id="message" cols="30" rows="10" placeholder="Message">
-                        </textarea>
+                    <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
                     <button class="btn-send">send</button>
                     <div class="socials">
                         <ul>
@@ -346,7 +356,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     </main>
@@ -358,6 +368,7 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/nft-scroll.js"></script>
+    <script src="./assets/js/faq.js"></script>
 </body>
 
 </html>
