@@ -126,9 +126,9 @@
   .spiner {
     display: none;
   }
-  .section-hero__h1 span,
-  .section-hero__h2 span,
-  .section-hero__h3 span {
+  .section-hero__h1 p,
+  .section-hero__h2 p,
+  .section-hero__h3 p {
     display: inline-block;
   }
   .section-hero__h1 {
