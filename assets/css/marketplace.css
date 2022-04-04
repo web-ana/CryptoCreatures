@@ -1,0 +1,40 @@
+@import './styles.css';
+@import './responsive.css';
+
+/* ---------- SECITON HEADER ---------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo,
+.logo-caption {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  height: auto;
+  border-left: 8px solid var(--pink);
+  border-right: 8px solid var(--pink);
+  background: rgba(255, 28, 110, 0.2);
+  padding: 22px 73px;
+}
+.main-menu {
+  display: flex;
+  gap: 128px;
+}
+.main-menu__link {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Kusanagi';
+}
+.main-menu__item:nth-last-of-type(2) .main-menu__link {
+  color: var(--pink);
+}
+.search-form {
+  border-left: 8px solid var(--pink);
+  border-right: 8px solid var(--pink);
+  background: rgba(255, 28, 110, 0.2);
+}
+input {
+  background: transparent;
+}

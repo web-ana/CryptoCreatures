@@ -337,6 +337,7 @@
   }
   /* ---------- SECTION HERO end ---------- */
   /* ---------- SECTION NFT-COLLECTION start ---------- */
+
   .nft-cards {
     grid-template-columns: 1fr;
   }
@@ -344,6 +345,10 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+  }
+  .card-info__header h3 {
+    font-size: 18px;
+    line-height: 18px;
   }
   .card__frame.frame--red {
     background: url(../img/nftcard-mobile-top-red.svg),
@@ -373,17 +378,24 @@
     background-position: top, bottom;
     max-width: 343px;
   }
-  /* ---------- SECTION CREATORstart ---------- */
+  /* ---------- SECTION CREATOR start ---------- */
+  .section-creator h2 {
+    font-size: 36px;
+  }
   .creator-frame {
-    background: url(../img/creator-frame-mobile.svg);
+    background: url(../img/creator-frame-mobile.svg) no-repeat;
     width: 343px;
-    height: 1154px;
+    height: 1168px;
   }
   .creator-info {
     align-items: start;
     text-align: left;
   }
   /* ---------- SECTION ROADMAP start ---------- */
+  .section-roadmap h2,
+  .roadmap__h3-tablet {
+    font-size: 36px;
+  }
   .roadmap-2021,
   .roadmap-2022 {
     display: flex;
@@ -395,8 +407,14 @@
   .roadmap-cards {
     flex-direction: column;
   }
+  .section-faq h2 {
+    font-size: 36px;
+  }
   /* ---------- SECTION FAQ start ---------- */
   /* ---------- SECTION CONTACT start ---------- */
+  .section-contact h2 {
+    font-size: 36px;
+  }
   .contact-frame {
     padding: 5px 0;
     width: 343px;
