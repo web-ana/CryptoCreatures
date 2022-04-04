@@ -1,0 +1,128 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-content: center;
+}
+
+.popup-origin-story {
+    background: url('../img/origin-story-left.svg'), url('../img/origin-story-right.svg');
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+    padding-top: 11px;
+    margin: 0 48px;
+    overflow-y: auto;
+    display: none;
+}
+
+.popup-origin-story-inside {
+    padding: 34px 24px;
+    background: #130108;
+    border: 4px solid #FFD700;
+    max-width: 1114px;
+}
+
+.popup-about-us {
+    background: url('../img/about-us-left.svg'), url('../img/about-us-right.svg');
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+    padding-top: 11px;
+    margin: 0 48px;
+    overflow-y: auto;
+    display: none;
+}
+
+.popup-about-us-inside {
+    padding: 34px 24px;
+    background: #130108;
+    border: 4px solid #E1203A;
+    max-width: 1114px;
+}
+
+.popup-about-us .main-content {
+    max-width: 985px;
+    margin-top: 32px;
+}
+
+.popup-about-us .main-content {
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    /* or 100% */
+    color: #FFFFFF;
+}
+
+.popup-about-us h3 {
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.goals-container {
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.goals-container .goal-item span {
+    color: #E1203A;
+}
+
+.popup-header {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-auto-flow: column;
+    margin-bottom: 9px;
+}
+
+.close-button {
+    padding: 12px;
+}
+
+#cls-btn-origin {
+    background-color: #FFD700;
+}
+
+#cls-btn-about {
+    background-color: #E1203A;
+}
+
+.popup-origin-story h2 {
+    font-family: 'Kusanagi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 24px;
+    /* identical to box height, or 67% */
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 65px;
+}
+
+.popup-origin-story p {
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 763px;
+}
