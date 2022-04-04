@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="./assets/css/popups.css">
     <title>Crypto Creatures</title>
 </head>
 
@@ -77,7 +78,7 @@
             <img class="nft-characters-tablet" src="./assets/img/nft-characters-tablet.png" alt="">
             <div class="hero-btn-frame">
                 <img class="hero__btn--ornament" src="./assets/img/btn-ornament-left.svg" alt="">
-                <button><img src="./assets/img/btn.png" alt="Learn More"></button>
+                <button onclick="openpopup('.popup-about-us')"><img src="./assets/img/btn.png" alt="Learn More"></button>
                 <img class="hero__btn--ornament" src="./assets/img/btn-ornament-right.png" alt="">
             </div>
         </section>
@@ -215,7 +216,7 @@
                     </div>
                 </div>
                 <div class="nft-links">
-                    <a href="">Read Origin Story</a>
+                    <a onclick="openpopup('.popup-origin-story')">Read Origin Story</a>
                     <a href="">See All</a>
                 </div>
             </div>
@@ -397,10 +398,55 @@
         <small>&copy; 2022 CryptoCreatures - All Rights Reserved</small>
     </footer>
 
+    <div class="popup-overlay">
+        <div class="popup-origin-story">
+            <div class="popup-origin-story-inside">
+                <div class="popup-header">
+                    <img src="./assets/img/origin-story-info.svg" alt="Info">
+                    <button onclick="closepopup('.popup-origin-story')" class="close-button" id="cls-btn-origin"><img src="./assets/img/close-big.svg" alt="Close Popup"></button>
+                </div>
+                <h2>ORIGIN STORY</h2>
+                <p>First, there was the bitcoin whitepaper then there was the blockchain. Many years passed before Ethereum manifested itself into our existence. Our savior, ETH Lord gave life to many wonderful and terrible creations. Balance is maintained
+                    by humans. They replenish our lifeforce by congregating in our network. The more human interaction we get the stronger we become. In contrast, the less human contact we receive the weaker we become. If we become too weak, we die or
+                    worse, transform into zombie coins. We, CryptoCreatures are a 1:1 non-fungible token that is derived from diverse cryptocurrencies. Our purpose is to serve and protect humans from zombie coins and other mischievous monsters in our
+                    world. We continue our quest to acquire coins for our human companions. The adventure never ends with CryptoCreatures.
+                </p>
+            </div>
+        </div>
+
+        <div class="popup-about-us">
+            <div class="popup-about-us-inside">
+                <div class="popup-header">
+                    <img src="./assets/img/about-us.svg" alt="Info">
+                    <button onclick="closepopup('.popup-about-us')" class="close-button" id="cls-btn-about"><img src="./assets/img/close-big.svg" alt="Close Popup"></button>
+                </div>
+                <div class="main-content">
+                    <p>We are a venture capital firm that invests in technology companies that are applying blockchain, AI (artificial intelligence) and other revolutionary technologies that aim to improve the human experience.</p>
+
+                    <h3>OUR GOALS</h3>
+                    <p>We are searching for companies with experienced leadership, realistic goals, and established project fundamentals.</p>
+
+                    <div class="goals-container">
+                        <div class="goal-item">
+                            [<span>Solution</span>] We seek out companies that provide technological solutions.
+                        </div>
+                        <div class="goal-item">
+                            [<span>Leadership</span>] We exclusively conduct business with experienced entrepreneurs with calculated successes.
+                        </div>
+                        <div class="goal-item">
+                            [<span>Ethics</span>] We exclusively invest in companies that are proven honest and transparent with the consumer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/nft-scroll.js"></script>
     <script src="./assets/js/faq.js"></script>
     <script src="./assets/js/mobile-menu.js"></script>
+    <script src="./assets/js/popups.js"></script>
 </body>
 
 </html>
