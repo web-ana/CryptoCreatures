@@ -558,16 +558,22 @@ img[alt~='rating'] {
 }
 
 /* ---------- SECTION CONTACT---------- */
-
 .contact-frame {
-  background: url(../img/contact-frame.png) no-repeat;
+  background: url(../img/cotact-frame-top.png),
+    url(../img/cotact-frame-bottom.png);
+  background-size: contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
   width: 830px;
-  height: 584px;
+  /* height: 584px; */
+  padding: 11px 0;
   margin: 0 auto;
 }
 
 .contact__main {
-  padding: 100px 40px 0;
+  background: rgba(255, 28, 110, 0.2);
+  /* padding: 100px 40px 0; */
+  padding: 100px 40px 20px;
   display: grid;
   justify-content: center;
   grid-row-gap: 24px;
@@ -602,6 +608,7 @@ textarea::placeholder {
 
 textarea {
   grid-area: textarea;
+  resize: vertical;
 }
 
 .btn-send {
