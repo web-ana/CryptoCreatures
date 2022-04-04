@@ -272,6 +272,7 @@ h3 {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     grid-gap: 10px;
+    align-items: start;
 }
 
 .nft-cards-new {
@@ -313,7 +314,7 @@ h3 {
 
 .card__frame {
     width: 551px;
-    height: 270px;
+    /* height: 270px; */
     /* margin: 8px 12px 12px 9px; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -321,19 +322,27 @@ h3 {
 }
 
 .card__frame.frame--red {
-    background: url(../img/nft-cardframe-red.png);
+    background: url(../img/nft-card-bg-desktop-top.svg), url(../img/nft-card-bg-desktop-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
 }
 
 .card__frame.frame--green {
-    background: url(../img/nft-cardframe-green.png);
+    background: url(../img/nft-card-bg-desktop-top-green.svg), url(../img/nft-card-bg-desktop-bottom-green.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
 }
 
 .card__frame.frame--blue {
-    background: url(../img/nft-cardframe-blue.png);
+    background: url(../img/nft-card-bg-desktop-top-blue.svg), url(../img/nft-card-bg-desktop-bottom-blue.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
 }
 
 .card__frame.frame--pink {
-    background: url(../img/nft-cardframe-pink.png);
+    background: url(../img/nft-card-bg-desktop-top-pink.svg), url(../img/nft-card-bg-desktop-bottom-pink.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
 }
 
 .card-info__text {

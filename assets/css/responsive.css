@@ -58,24 +58,28 @@
         align-items: center;
     }
     .card__frame.frame--red {
-        background: url(../img/nft-cardframe-red-tablet.svg);
+        background: url(../img/nftcard-tablet-top-red.svg), url(../img/nftcard-tablet-bottom-red.svg);
+        background-repeat: no-repeat;
+        background-position: top, bottom;
         width: 736px;
-        height: 278px;
     }
     .card__frame.frame--green {
-        background: url(../img/nft-cardframe-green-tablet.svg);
+        background: url(../img/nftcard-tablet-top-green.svg), url(../img/nftcard-tablet-bottom-green.svg);
+        background-repeat: no-repeat;
+        background-position: top, bottom;
         width: 736px;
-        height: 278px;
     }
     .card__frame.frame--blue {
-        background: url(../img/nft-cardframe-blue-tablet.svg);
+        background: url(../img/nftcard-tablet-top-blue.svg), url(../img/nftcard-tablet-bottom-blue.svg);
+        background-repeat: no-repeat;
+        background-position: top, bottom;
         width: 736px;
-        height: 278px;
     }
     .card__frame.frame--pink {
-        background: url(../img/nft-cardframe-pink-tablet.svg);
+        background: url(../img/nftcard-tablet-top-pink.svg), url(../img/nftcard-tablet-bottom-pink.svg);
+        background-repeat: no-repeat;
+        background-position: top, bottom;
         width: 736px;
-        height: 278px;
     }
     .card-info-content {
         font-size: 18px;
@@ -340,24 +344,28 @@
         gap: 24px;
     }
     .card__frame.frame--red {
-        background: url(../img/nft-cardframe-red-mobile.svg);
-        width: 343px;
-        height: 458px;
+        background: url(../img/nftcard-mobile-top-red.svg), url(../img/nftcard-mobile-bottom-red.svg);
+        background-repeat: no-repeat;
+        background-position: top, bottom;
+        max-width: 343px;
     }
     .card__frame.frame--blue {
-        background: url(../img/nft-cardframe-blue-mobile.svg);
-        width: 343px;
-        height: 458px;
+        background: url(../img/nftcard-mobile-top-blue.svg), url(../img/nftcard-mobile-bottom-blue.svg);
+        background-repeat: no-repeat;
+        background-position: top, bottom;
+        max-width: 343px;
     }
     .card__frame.frame--pink {
-        background: url(../img/nft-cardframe-pink-mobile.svg);
-        width: 343px;
-        height: 458px;
+        background: url(../img/nftcard-mobile-top-pink.svg), url(../img/nftcard-mobile-bottom-pink.svg);
+        background-repeat: no-repeat;
+        background-position: top, bottom;
+        max-width: 343px;
     }
     .card__frame.frame--green {
-        background: url(../img/nft-cardframe-green-mobile.svg);
-        width: 343px;
-        height: 458px;
+        background: url(../img/nftcard-mobile-top-green.svg), url(../img/nftcard-mobile-bottom-green.svg);
+        background-repeat: no-repeat;
+        background-position: top, bottom;
+        max-width: 343px;
     }
     /* ---------- SECTION CREATORstart ---------- */
     .creator-frame {
