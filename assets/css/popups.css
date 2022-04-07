@@ -126,3 +126,29 @@
     color: #FFFFFF;
     max-width: 763px;
 }
+
+#cls-btn-flyer {
+    background-color: #fff;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.popup-flyer {
+    position: relative;
+    display: none;
+}
+
+#flyer-img {
+    max-width: 480px;
+}
+
+@media only screen and (max-width: 573px) {
+    #flyer-img {
+        width: 100%;
+        height: auto;
+    }
+    .popup-flyer {
+        margin: 0 24px;
+    }
+}
