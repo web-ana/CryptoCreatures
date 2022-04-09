@@ -53,6 +53,7 @@ button {
 }
 
 body {
+<<<<<<< HEAD
   background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)),
     url(../img/page-bg.svg) no-repeat;
   background-size: cover;
@@ -64,6 +65,19 @@ body {
   color: #ffffff;
   position: relative;
   overflow-x: hidden;
+=======
+    background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)), url(../img/page-bg.svg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #ffffff;
+    position: relative;
+    overflow-x: hidden;
+>>>>>>> 43b34f531eaf5e12e0f8c5af417bb15d8900a637
 }
 
 .container {
