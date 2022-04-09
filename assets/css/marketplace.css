@@ -1,5 +1,5 @@
 @import './styles.css';
-/* @import './responsive.css'; */
+
 :root {
   --main-background: rgba(255, 28, 110, 0.2);
 }
@@ -20,11 +20,10 @@
   gap: 8px;
   align-items: center;
 }
-.nav {
+.marketplace-nav {
   height: auto;
   width: auto;
   border-left: 8px solid var(--pink);
-  border-right: 8px solid var(--pink);
   background: var(--main-background);
   padding: 22px 73px;
 
@@ -112,6 +111,9 @@ main {
 .collection-item {
   width: 263px;
 }
+.collection-item__img {
+  width: 263px;
+}
 .collection-item__header {
   display: flex;
   gap: 9px;
@@ -144,9 +146,6 @@ main {
   .container {
     max-width: auto;
     margin: 0 60px;
-  }
-  .main-menu {
-    gap: 30px;
   }
 }
 

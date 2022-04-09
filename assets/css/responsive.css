@@ -58,32 +58,32 @@
     align-items: center;
   }
   .card__frame.frame--red {
-    background: url(../img/nftcard-tablet-top-red.svg),
+    /* background: url(../img/nftcard-tablet-top-red.svg),
       url(../img/nftcard-tablet-bottom-red.svg);
     background-repeat: no-repeat;
-    background-position: top, bottom;
-    width: 736px;
+    background-position: top, bottom; */
+    max-width: 736px;
   }
   .card__frame.frame--green {
-    background: url(../img/nftcard-tablet-top-green.svg),
+    /* background: url(../img/nftcard-tablet-top-green.svg),
       url(../img/nftcard-tablet-bottom-green.svg);
     background-repeat: no-repeat;
-    background-position: top, bottom;
-    width: 736px;
+    background-position: top, bottom; */
+    max-width: 736px;
   }
   .card__frame.frame--blue {
-    background: url(../img/nftcard-tablet-top-blue.svg),
+    /* background: url(../img/nftcard-tablet-top-blue.svg),
       url(../img/nftcard-tablet-bottom-blue.svg);
     background-repeat: no-repeat;
-    background-position: top, bottom;
-    width: 736px;
+    background-position: top, bottom; */
+    max-width: 736px;
   }
   .card__frame.frame--pink {
-    background: url(../img/nftcard-tablet-top-pink.svg),
+    /* background: url(../img/nftcard-tablet-top-pink.svg),
       url(../img/nftcard-tablet-bottom-pink.svg);
     background-repeat: no-repeat;
-    background-position: top, bottom;
-    width: 736px;
+    background-position: top, bottom; */
+    max-width: 736px;
   }
   .card-info-content {
     font-size: 18px;
@@ -222,17 +222,17 @@
     padding: 16px 0 0;
   }
   /* ---------- SECTION CREATOR start ---------- */
+
   .creator-frame {
-    background: url(../img/creator-frame-tablet.png) center no-repeat;
+    background: url(../img/creator-frame-tablet.png) no-repeat;
     width: 736px;
-    height: 870px;
-    justify-content: center;
-    margin: 0;
+    height: 1168px;
   }
   .creator-frame__article {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    margin-top: 44px;
   }
   .creator-info {
     align-items: center;
@@ -337,7 +337,6 @@
   }
   /* ---------- SECTION HERO end ---------- */
   /* ---------- SECTION NFT-COLLECTION start ---------- */
-
   .nft-cards {
     grid-template-columns: 1fr;
   }
@@ -345,51 +344,39 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    color: rgba(255, 255, 255, 0.8);
   }
   .card-info__header h3 {
     font-size: 18px;
     line-height: 18px;
   }
   .card__frame.frame--red {
-    background: url(../img/nftcard-mobile-top-red.svg),
-      url(../img/nftcard-mobile-bottom-red.svg);
-    background-repeat: no-repeat;
-    background-position: top, bottom;
     max-width: 343px;
   }
   .card__frame.frame--blue {
-    background: url(../img/nftcard-mobile-top-blue.svg),
-      url(../img/nftcard-mobile-bottom-blue.svg);
-    background-repeat: no-repeat;
-    background-position: top, bottom;
     max-width: 343px;
   }
   .card__frame.frame--pink {
-    background: url(../img/nftcard-mobile-top-pink.svg),
-      url(../img/nftcard-mobile-bottom-pink.svg);
-    background-repeat: no-repeat;
-    background-position: top, bottom;
     max-width: 343px;
   }
   .card__frame.frame--green {
-    background: url(../img/nftcard-mobile-top-green.svg),
-      url(../img/nftcard-mobile-bottom-green.svg);
-    background-repeat: no-repeat;
-    background-position: top, bottom;
     max-width: 343px;
   }
   /* ---------- SECTION CREATOR start ---------- */
+  .section-creator {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
   .section-creator h2 {
     font-size: 36px;
   }
   .creator-frame {
     background: url(../img/creator-frame-mobile.svg) no-repeat;
-    width: 343px;
+    max-width: 343px;
     height: 1168px;
   }
-  .creator-info {
-    align-items: start;
-    text-align: left;
+  .btn-send {
+    margin-right: 9px;
   }
   /* ---------- SECTION ROADMAP start ---------- */
   .section-roadmap h2,
@@ -435,8 +422,18 @@
     width: 311px;
     height: 48px;
   }
+  label[for='email'],
+  label[for='name'],
+  textarea {
+    justify-self: center;
+  }
   footer {
     display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navigator-container {
+    width: calc(100vw - 32px);
   }
 }
 
@@ -455,15 +452,80 @@
 }
 
 @media only screen and (max-width: 375px) {
+  .section-hero {
+    justify-content: center;
+  }
+  .section-hero-main {
+    gap: 12px;
+  }
+  .section-hero__h1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-hero h2 {
+    margin: 0;
+  }
+  .nft-characters-tablet {
+    width: 288px;
+    height: 240px;
+  }
+  .nft-collection {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .nft-links {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+
+    font-size: 22px;
+    line-height: 23px;
+  }
+  .creator-img {
+    margin-top: 25px;
+    width: 247px;
+    height: 289px;
+  }
+  .roadmap-cards img {
+    width: 256px;
+    height: 300px;
+  }
   /* ---------- SECTION FAQ start ---------- */
   .faq-card__p {
     font-size: 18px;
     line-height: 19px;
   }
+
+  /* SECTION CONTACT */
+
+  .section-contact .socials ul {
+    gap: 12px;
+  }
+  .section-creator,
+  .section-roadmap,
+  .section-contact {
+    margin-top: 38px;
+    margin-bottom: 18px;
+  }
+  .contact-frame {
+    max-width: 288px;
+  }
+  input[name='email'],
+  input[name='name'],
+  textarea {
+    width: 256px;
+  }
 }
 
-@media only screen and (max-width: 500px) {
-  .navigator-container {
-    width: calc(100vw - 32px);
+@media only screen and (max-width: 320px) {
+  .creator-frame {
+    background: url(../img/creator-frame-320px.svg) no-repeat;
+    width: 288px;
+  }
+  .creator-img {
+    margin-top: 0;
+  }
+  .career__p {
+    font-size: 16px;
   }
 }
