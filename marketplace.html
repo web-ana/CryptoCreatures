@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <a class="logo" href="#"><img class="logo" src="./assets/img/logo-png.png" alt="Crypto Creatures">
+            <a class="logo" href="#"><img class="logo-img" src="./assets/img/logo-png.png" alt="Crypto Creatures">
                 <p class="logo-caption">CryptoCreatures</p>
             </a>
             <nav class="marketplace-nav">
@@ -28,19 +28,91 @@
                     <img class="search-img" src="./assets/img/search-icon.svg" alt="">
                 </label>
             </form>
-            <div class="tablet-menu">
-                <img src="./assets/img/menu-btn-tablet.png" alt="">
+            <div class="mobile-menu">
+                <!-- <a class="logo" href="#"><img class="logo-img" src="./assets/img/logo-png.png" alt="Crypto Creatures">
+                    <p class="logo-caption">CryptoCreatures</p>
+                </a>
+                <nav class="mobile-nav">
+                    <ul class="main-menu">
+                        <li class="main-menu__item"><a class="main-menu__link" href="">home</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="">marketplace</a></li>
+                        <li class="main-menu__item"><a class="main-menu__link" href="">website</a></li>
+                    </ul>
+                </nav> -->
             </div>
+            <button class="btn-menu">
+                <img src="./assets/img/menu-btn-tablet.png" alt="">
+            </button>
         </div>
+
     </header>
+
     <main class="marketplace">
         <div class="container">
             <div class="marketplace-header">
                 <h1 class="marketplace-header__h1">MARKETPLACE</h1>
+
                 <div class="marketplace-header__filter">
                     <p>Sort by price: high to low</p>
                     <button class="btn-filter"><img src="./assets/img/filter-icon.svg" alt=""></button>
                 </div>
+            </div>
+
+            <div class="nft-page">
+                <img class="nft-img" src="./assets/img/nft-img-1.png" alt="Helterstellar">
+                <article class="nft-frame">
+                    <div class="nft-content">
+                        <div class="nft-content__header">
+                            <div class="nft-content__header--left">
+                                <img src="./assets/img/nftcard-arrow-red.png" alt="">
+                                <h3>HELTER STELLAR</h3>
+                                <img src="./assets/img/marketplace-collection-verified.svg" alt="">
+                            </div>
+                            <img src="./assets/img/share-icon.svg" alt="Click to share">
+                        </div>
+                        <div class="nft-content__tags">
+                            <p>CRYPTOCREATURES</p>
+                            <p>WEBCOMIC</p>
+                            <p>SUPER RARE</p>
+                            <p>1:1</p>
+                        </div>
+                        <div class="nft-content__id bordered-frame">
+                            <div>
+                                <p>Policy ID - <span>cf5dbee65d0b7d2019a511c8af84
+                                        <span>2a19da8a127a3398160a4b19f524<span></span>
+                                </p>
+
+                            </div>
+                            <a><img src="./assets/img/copy-icon.svg" alt="Clickable copy option"></a>
+                        </div>
+                        <div class="nft-content__fingerprint bordered-frame">
+                            <div>
+                                <p>Fingerprint -
+                                    <span>asset1rgntxcklcva8fwhxttvsan <span>45ehz5mn64y2z8p5</span></span>
+                                </p>
+                            </div>
+                            <a><img src="./assets/img/copy-icon.svg" alt="Clickable copy option"></a>
+                        </div>
+                        <div class="nft-content__story bordered-frame">
+                            <h4>STORY</h4>
+                            <p>Greetings crypto dwellers. I am Helter Stellar, the most excellent peer-to-peer
+                                network
+                                guardian. I will defend all
+                                humans under my domain who pledge allegiance to Stellar Lumens. We shall conquer
+                                coins
+                                and
+                                vanquish evildoers. I will
+                                lead us to victory.</p>
+                        </div>
+                        <div class="nft-content__footer">
+                            <button class="nft-content__btn bordered-frame">BUY NOW</button>
+                            <div class="nft-content__price">
+                                <p class="nft-content__pricetitle">PRICE</p>
+                                <p class="nft-content__pricevalue">2,000 ADA</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
             <div class="marketplace-collection">
                 <article class="collection-item">
@@ -177,8 +249,6 @@
                     <div class="collection-frame"></div>
                 </article>
 
-
-
                 <article class="collection-item">
                     <img class="collection-item__img" src="./assets/img/marketplace-collection-1.png" alt="">
                     <div class="collection-item__info">
@@ -246,7 +316,6 @@
                     <div class="collection-frame"></div>
                 </article>
             </div>
-        </div>
     </main>
 </body>
 
