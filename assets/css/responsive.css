@@ -582,3 +582,22 @@
     width: 256px;
   }
 }
+
+/* add new responsive styles 12.04.2022 2nd */
+@media only screen and (max-width: 1440px) {
+  .section-hero-main {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .section-hero__h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 13.5px;
+  }
+  .section-hero img[alt='Learn More'] {
+    width: 220px;
+    height: 64px;
+  }
+}
