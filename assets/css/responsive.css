@@ -529,3 +529,56 @@
     font-size: 16px;
   }
 }
+
+/* add new responsive styles 12.04.2022 */
+@media only screen and (min-width: 1921px) {
+  .section-hero {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-left: 55px;
+  }
+  .nft-characters {
+    background: url(../img/nft-characters-1921.svg);
+    background-repeat: no-repeat;
+    width: 1099.79px;
+    height: 971px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .input-name,
+  .input-email {
+    width: 346px;
+  }
+  .roadmap-2021,
+  .roadmap-2022 {
+    margin-top: -45px;
+  }
+  .roadmap-card-mobile {
+    display: block;
+  }
+  .roadmap__h3-tablet {
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .input-name,
+  .input-email {
+    width: 311px;
+  }
+  .btn-send {
+    margin-right: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .roadmap__h3-tablet {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .input-name,
+  .input-email,
+  textarea {
+    width: 256px;
+  }
+}

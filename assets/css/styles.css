@@ -24,18 +24,19 @@ html {
   overflow-x: hidden;
 }
 body {
-    background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)), url(../img/page-bg.svg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #ffffff;
-    position: relative;
-    overflow-x: hidden;
-  }
+  background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)),
+    url(../img/page-bg.svg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #ffffff;
+  position: relative;
+  overflow-x: hidden;
+}
 
 ul {
   list-style: none;
@@ -64,7 +65,6 @@ button {
 }
 
 body {
-<<<<<<< HEAD
   background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)),
     url(../img/page-bg.svg) no-repeat;
   background-size: cover;
@@ -76,19 +76,6 @@ body {
   color: #ffffff;
   position: relative;
   overflow-x: hidden;
-=======
-    background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)), url(../img/page-bg.svg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #ffffff;
-    position: relative;
-    overflow-x: hidden;
->>>>>>> 43b34f531eaf5e12e0f8c5af417bb15d8900a637
 }
 
 .container {
@@ -866,4 +853,24 @@ footer {
 .rotate-arrow {
   transform: rotateX(180deg);
   transition: 0.5s;
+}
+
+/* added new styles 12.04.2022 */
+.input-name,
+.input-email {
+  width: 367px;
+}
+input[name='email'],
+input[name='name'] {
+  width: 100%;
+}
+.spiner,
+.faq-card {
+  cursor: pointer;
+}
+.section-roadmap .roadmap-cards {
+  justify-content: space-around;
+}
+.roadmap-card-mobile {
+  display: none;
 }
