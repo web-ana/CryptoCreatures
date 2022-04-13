@@ -834,6 +834,8 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+
 /* 
 .open-faq {
     animation-name: openFaq;
@@ -854,19 +856,6 @@ footer {
 .visible {
     display: block;
 }
-
-.rotate-arrow {
-<<<<<<< HEAD
-    transform: rotateX(180deg);
-    transition: 0.5s;
-}
-=======
-  transform: rotateX(180deg);
-  transition: 0.5s;
-} */
->>>>>>> 5db90d21ab6fdf3596aabace7b544411fc993255
-
-
 /* added new styles 12.04.2022 */
 
 .input-name,
@@ -891,67 +880,77 @@ input[name='name'] {
 .roadmap-card-mobile {
     display: none;
 }
-<<<<<<< HEAD
 
 .goback-a {
     display: grid;
     grid-auto-flow: column;
     grid-gap: 24px;
 }
-=======
+
+
 /* added new styles 13.04.2022 */
+
 .hero-btn-frame {
-  align-items: center;
+    align-items: center;
 }
+
 .hero-btn-frame button:hover {
-  background: var(--pink);
-  border-radius: 3px;
-  transition: 0.3s ease;
+    background: var(--pink);
+    border-radius: 3px;
+    transition: 0.3s ease;
 }
+
 .slider_button_prev,
 .slider_button_next {
-  cursor: pointer;
+    cursor: pointer;
 }
+
 .socials img {
-  border-radius: 50%;
+    border-radius: 50%;
 }
+
 .socials img:hover {
-  background-color: rgb(255, 255, 255, 0.2);
-  transition: 0.3s;
+    background-color: rgb(255, 255, 255, 0.2);
+    transition: 0.3s;
 }
+
 .btn-send {
-  padding: 5px 7px;
-  border-radius: 5px;
+    padding: 5px 7px;
+    border-radius: 5px;
 }
+
 .btn-send:hover {
-  background-color: rgb(255, 255, 255, 0.2);
-  color: var(--blue);
-  transition: 0.3s ease;
+    background-color: rgb(255, 255, 255, 0.2);
+    color: var(--blue);
+    transition: 0.3s ease;
 }
+
 footer {
-  max-width: 1920px;
-  margin: 0 auto;
+    max-width: 1920px;
+    margin: 0 auto;
 }
+
 .accordion {
-  width: 100%;
-  transition: 0.5s ease;
+    width: 100%;
+    transition: 0.5s ease;
 }
 
 .dropdown {
-  /* display: grid;
+    /* display: grid;
   grid-template-columns: 1fr auto; */
 }
 
 .panel {
-  margin-top: 32px;
-  max-height: 150px;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
+    margin-top: 32px;
+    max-height: 150px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
 }
+
 .dropdown img {
-  transition: 0.5s;
+    transition: 0.5s;
 }
+
 .active img {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
->>>>>>> 5db90d21ab6fdf3596aabace7b544411fc993255
