@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
+    <header class="main-header">
+        <div class="container header">
             <nav class="nav nav-first">
                 <ul class="menu menu-first">
                     <li class="menu__item"><a class="menu__link" href="index.html">HOME</a></li>
@@ -40,6 +40,56 @@
         <div class="mobile-menu">
             <div class="mobile-menu-header">
                 <a class="logo-tablet" href="#"><img class="logo" src="./assets/img/logo-png.png" alt="Crypto Creatures"></a>
+                <img src="./assets/img/close.svg" alt="Close Menu" onclick="closeMenu()">
+            </div>
+
+            <nav class="mobile-nav">
+                <li>
+                    <a href="#" onclick="closeMenu()">HOME</a>
+                </li>
+                <li>
+                    <a href="#nft-collections" onclick="closeMenu()">NFT CoLLection</a>
+                </li>
+                <li>
+                    <a href="#creator" onclick="closeMenu()">CREATOR</a>
+                </li>
+                <li>
+                    <a href="#roadmap" onclick="closeMenu()">ROADMAP</a>
+                </li>
+                <li>
+                    <a href="#faq" onclick="closeMenu()">FAQ</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick="closeMenu()">CONTACT</a>
+                </li>
+            </nav>
+        </div>
+    </header>
+    <header class="secondary-header" id="stickyHeader">
+        <div class="container header">
+            <nav class="nav nav-first">
+                <ul class="menu menu-first">
+                    <li class="menu__item"><a class="menu__link" href="index.html">HOME</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#nft-collections">NFT CoLLection</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#creator">CREATOR</a></li>
+                </ul>
+            </nav>
+            <a class="logo-tablet" href="#"><img class="logo" src="./assets/img/logo-png.png" alt="Crypto Creatures">
+                <p class="logo-caption">CryptoCreatures</p>
+            </a>
+            <nav class="nav nav-second">
+                <ul class="menu menu-second">
+                    <li class="menu__item"><a class="menu__link" href="#roadmap">ROADMAP</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#faq">FAQ</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a onclick="openMenu()"><img class="menu-btn-tablet" src="./assets/img/menu-btn-tablet.png" alt=""></a>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <a class="logo-tablet" href="#"><img class="logo" src="./assets/img/logo-png.png"
+                        alt="Crypto Creatures"></a>
                 <img src="./assets/img/close.svg" alt="Close Menu" onclick="closeMenu()">
             </div>
 
@@ -598,6 +648,26 @@
 
     </script> -->
 
+    <script>
+        window.onscroll = function () {
+            stickyHendler();
+        };
+
+        let stickyHeader = document.getElementById('stickyHeader');
+        // let sticky = stickyHeader.offsetTop;
+        let sticky = 50;
+        stickyHeader.style.display = 'none';
+        function stickyHendler() {
+            if (window.pageYOffset >= 70) {
+                stickyHeader.style.display = 'flex';
+                stickyHeader.classList.add('sticky');
+            } else {
+                stickyHeader.classList.remove('sticky');
+                stickyHeader.style.display = 'none';
+            }
+        }
+
+    </script>
 </body>
 
 </html>
