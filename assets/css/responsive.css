@@ -610,29 +610,29 @@
     }
 }
 
-<<<<<<< HEAD
 @media only screen and (max-width: 1712px) {
     .faq-container2.container {
         margin-left: 16px;
         margin-right: 16px;
     }
 }
-=======
+
+
 /* add new responsive styles 14.04.2022 */
 
 @media only screen and (max-width: 1780px) {
-  .header.container {
-    max-width: auto;
-    padding: 28px 120px 0 120px;
-  }
+    .header.container {
+        max-width: auto;
+        padding: 28px 120px 0 120px;
+    }
 }
+
 @media only screen and (max-width: 1280px) {
-  .header.container {
-    padding: 16px 16px 0 16px;
-    justify-content: space-between;
-  }
-  .mobile-menu-header {
-    margin-top: 5em;
-  }
+    .header.container {
+        padding: 16px 16px 0 16px;
+        justify-content: space-between;
+    }
+    .mobile-menu-header {
+        margin-top: 5em;
+    }
 }
->>>>>>> d756d52b3ff00fcbb8e0b660f558f319fe5de7bc

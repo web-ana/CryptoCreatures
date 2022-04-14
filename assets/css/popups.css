@@ -152,3 +152,9 @@
         margin: 0 24px;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    .popup-overlay div {
+        margin: 0 !important;
+    }
+}
