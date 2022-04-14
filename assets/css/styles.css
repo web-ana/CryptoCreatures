@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)), url(../img/page-bg.svg) no-repeat;
+    background: url(../img/page-bg.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu Mono';
@@ -63,19 +63,6 @@ button {
 @font-face {
     font-family: 'Ubuntu Mono';
     src: url(../fonts/UbuntuMono-Regular.ttf);
-}
-
-body {
-    background: linear-gradient(rgba(19, 1, 8, 0.6), rgba(19, 1, 8, 0.6)), url(../img/page-bg.svg) no-repeat;
-    background-size: cover;
-    font-family: 'Ubuntu Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
-    color: #ffffff;
-    position: relative;
-    overflow-x: hidden;
 }
 
 .container {
@@ -953,4 +940,75 @@ footer {
 
 .active img {
     transform: rotate(180deg);
+}
+
+
+/* FAQ 2 */
+
+#faq2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.faqs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    align-items: start;
+    justify-content: center;
+}
+
+.faq-container {
+    background: url('../img/faq-left-side-bg.png'), url('../img/faq-right-side-bg.png'), rgba(255, 28, 110, 0.2);
+    background-repeat: no-repeat;
+    background-position: top left, top right;
+    color: #fff;
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.25);
+}
+
+.question {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 38px 80px 38px 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question::after {
+    content: url('../img/faq-arrow.png');
+    font-size: 2.2rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+}
+
+.question.active::after {
+    transform: rotate(180deg);
+}
+
+.answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.answer {
+    padding: 0 24px 24px;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 790px) {
+    .section-faq2 {
+        font-size: 14px;
+    }
+    .wrapper {
+        width: 80%;
+    }
+}
+
+.rotate-arrow {
+    transform: translateX(180deg) !important;
 }
